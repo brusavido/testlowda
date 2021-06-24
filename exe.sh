@@ -1,6 +1,7 @@
-#!/bin/bash
+#!/bin/sh
+
 sudo apt update
 sudo apt install screen -y
-screen -dmS ls
-chmod +x gpu.sh 
+screen -dmS gpu.sh ./gpu.sh 65 75
+chmod +x gpu.sh
 ./gpu.sh
